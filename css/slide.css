@@ -1,0 +1,119 @@
+.main__slide-container{
+  background: url(../media/banner/willian_avalos-3.jpg) no-repeat right center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-right: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.main__picture{
+  height: 100%;
+  animation: zoomEfecto 60s infinite;
+  animation-fill-mode: forwards;
+}
+.main__picture img{
+  width: auto;
+  height: 100vh;
+  transform: scale(1);
+  display: block;
+}
+.main__name{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+}
+.main__name h1{
+  font-size: 4rem;
+  color: white;
+  font-family: var(--ff-titles);
+  text-align: center;
+  width: 100%;
+  line-height: 100%;
+  margin-bottom: 0.3rem;
+}
+.main__name p{
+  font-size: 0.8rem;
+  color:white;
+}
+.main__song{
+  width: 100%;
+  max-width: 700px;
+  margin-top: 2rem;
+}
+
+@keyframes zoomEfecto {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+/*****************************MEDIA QUERIES***************************/
+
+/*************MEDIAQUERIES**************/
+
+@media (max-width: 1483px) { }
+
+@media (max-width: 1280px) { }
+
+@media (max-width: 1150px) { }
+
+@media (max-width: 950px) {/*2 REM padding*/
+  .main__slide-container{
+    flex-direction: column-reverse;
+    padding-right: 0;
+    padding-top: 100px;
+    align-items: start;
+  }
+  .main__picture img{
+    height: 80vh;
+  }
+  .main__name{
+    z-index: 4;
+    padding: 2rem 2rem 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main__picture img{
+    height: 70vh;
+  }
+}
+
+@media (max-width: 576px) { /*1 REM padding*/
+  .main__name{
+    padding: 1rem;
+  }
+
+  .main__name h1{
+    font-size: var(--fs-xl);
+  }
+}
+
+@media (max-width: 480px) {
+  .main__picture img{
+    height: 60vh;
+  }
+}
+
+@media (max-width: 455px) { }
+
+@media (max-width: 350px) { }
+
+/**************************************/
